@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function run(){
+        alert('welcome to w3resource');
+        }
+        </script>
+</head>
+<body>
+    <h2>//Article tag</h2>
+   <article>
+    <h2>This is Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quis obcaecati totam quas similique debitis, nam sed id sint quibusdam temporibus rerum tenetur ex eligendi, earum ab dolores suscipit. Perspiciatis?</p>
+   </article>
+   <br>
+
+ <h2>  //Aside Tag</h2>
+   <h2>This is main page</h2>
+   <aside>
+    <h4>The main has 2 subpages</h4>
+    <h5>The two subpages has 2 more pages</h5>
+   </aside>
+    
+   <h2>//Canvas Tag</h2>
+
+   <canvas id="myCanvas1" width="300" height="100" style="border:2px solid;">  
+    Your browser does not support the HTML5 canvas tag.  
+    </canvas> 
+
+    <h2>//Command</h2>
+    <button type="button" style="background-image: url('./images/download.png'); background-repeat: no-repeat;padding-left: 20px;" onclick="run()">Run</button>
+
+
+  <h2>//Datalist Tag</h2>
+  <label for="browser">Choose your browser</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option  value="Edge"></option>
+    <option  value="Chrome"></option>
+    <option  value="Mozilla"></option>
+  </datalist>
+  <input type="submit">
+
+  
+
+  <h2>//Detail tag</h2>
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+
+  <h2>//Dialog tag</h2>
+  <dialog style="margin-right: 1750px;" open>This is an open dialog window</dialog>
+
+
+  <h2>//Figure tag</h2>
+  <figure>
+    <img src="./iamges/download.png" height="200px" width="200px" alt="Trulli" style="margin-top: 50px;">
+    <figcaption>Fig.1 - Truli, Puglia, Italy.</figcaption>
+  </figure>
+
+  <h2>//meter tag</h2>
+
+  <label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+<h2>//nav tag</h2>
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/python/">Python</a>
+  </nav>
+
+  <h2>Output tag</h2>
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    =<output name="x" for="a b"></output>
+    </form>
+
+    <h2>//Progress tag</h2>
+    <label for="file">Downloading progress:</label>
+<progress id="file" value="30" max="100"> 32% </progress>
+
+<h2>//ruby tag</h2>
+The kanji character for "fire" is 火 (<ruby>火<rt style="margin-top: 20px;font-size: 10px;">hi</rt></ruby>)
+
+<h2>//source tag</h2>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    
+
+  </audio>
+
+  <h2>//summary tag</h2>
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+
+  <h2>//track tag</h2>
+  <video width="320" height="240" controls>
+    <source src="forrest_gump.mp4" type="video/mp4">
+    <source src="forrest_gump.ogg" type="video/ogg">
+    <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+  </video>
+
+  <h2>//wbr tag</h2>
+  <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery <wbr> longwordthatwillbreakatspecific </wbr> placeswhenthebrowserwindowisresized.</p>
+
+  <h2>//Anchor tag</h2>
+  <a href="FTP.pdf" download="FTP.pdf" hreflang="en">Download FTP PDF</a>
+
+
+  <h2>//bdo tag</h2>
+  <p> This text will go right-to-left.</p>
+  <bdo dir="rtl">
+    This text will go right-to-left.
+    </bdo>
+    <br>
+
+    <h2>//button(autofocus)</h2>
+
+    <button autofocus>Click me</button>
+    <br>
+
+
+    <h2>//button(formnovalidate)</h2>
+    <form id="myForm">
+    
+        <button type="button" formnovalidate>Skip Validation</button>
+      </form>
+
+      <h2>//image tag(size attribute)</h2>
+      <img src="./iamges/download.png" alt="Image description" sizes="100vw">
+
+      <h2>//image tag(size srcset)</h2>
+
+      <img src="./iamges/download.png" alt="Image description"
+      srcset="./iamges/download.png 320w, ./iamges/download.png 640w, ./iamges/download.png 1024w">
+       
+
+      <h1>//link tag(author)</h1>
+      <link rel="author" href="https://www.example.com/about/john-doe">
+
+
+    
+        
+  
+</body>
+</html>

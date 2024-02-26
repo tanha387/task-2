@@ -1,0 +1,101 @@
+/* //Container queries */
+
+.post {
+    container-type: inline-size;
+    background-color: beige;
+  }
+
+  .card h2 {
+    font-size: 1em;
+    color:rebeccapurple;
+  }
+
+  /* //has selector */
+
+  /* Using :has() to find toys with blocks */
+.toy:has(.contents) {
+    background-color: lightblue;
+  }
+  
+  /* Using :has() to find toys with specific content (dolls) */
+  .contents:second-child:contains("Furniture") {
+    border: 2px solid rgb(221, 142, 23);
+    color: brown;
+  }
+  
+
+  /* ***nth-of Microsyntax**-
+   */
+.product-grid{
+    display: inline-flex;
+
+}
+   .product-grid .product-card:nth-child(3n+1) {
+    border: 1px solid #721616;
+    width: 300px;
+    margin-right: 80px;
+  }
+  
+  /* //text wrap balance */
+  #wrap{
+    width: 200px;
+    text-wrap: balance;
+  }
+
+  /* The :focus-visible Pseudo Class */
+  button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  border-color: #1e88e5;
+  box-shadow: 0 0 3px 2px #1e88e580;
+}
+
+/* * **initial-letter Property**:T */
+
+.initial::first-letter{
+    font-weight: bold;
+    color: rgb(54, 54, 226); 
+  }
+
+
+  /* //Colour mix */
+  .text {
+    color: color-mix(blue, green, sRGB); /* Mixes blue and green */
+  }
+
+
+  /* * **Cascade Layers (experimental)** */
+
+  @layer components {
+    footer{
+        color:#1e88e5;
+        background-color: rebeccapurple;
+    }
+  }
+  /* View transitions  */
+  .hidden-content {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; 
+    background-color: rgba(143, 28, 28, 0.25);
+  }
+  
+  .hidden-content.show {
+    opacity: 1; /* Applies on adding the "show" class */
+    background-color: rgba(143, 28, 28, 0.25);
+  }
+
+  /* popover */
+  .tooltip { 
+    position: relative;
+    display: inline-block; 
+    cursor: pointer; 
+  }
+
+
+  .tooltip:hover{ 
+    visibility: visible;
+    opacity: 1;
+    background-color: #1e88e5;
+  }
+
+  
